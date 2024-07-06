@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <!-- BootStrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <style>
+      /* main content  */
+      .main-content {
+        padding-top: 160px;
+        padding-bottom: 5px;
+        background-color: #a17135;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .serviceContent {
+        background-color: white;
+      }
+      .services-item {
+        background-color: #3990df;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        color: white;
+      }
+
+      .services-item > a:hover {
+        color: white;
+        font-weight: bold;
+      }
+      .services-link {
+        color: white;
+      }
+
+      .tab-content {
+        padding: 50px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-top: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar Start -->
+    <div class="top-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="contact-info">
+          <span class="mr-3"
+            ><i class="fa-solid fa-envelope"></i
+            ><a href="mailto:info@safehomes.biz " class="mail-to">
+              info@safehomes.biz</a
+            ></span
+          >
+          <span><i class="fa-solid fa-phone"></i> +91-9948144467</span>
+        </div>
+        <div class="social-icons">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/people/Safe-Homes/61559884437235/"
+            class="facebook social-icon"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/safehomes-propertysolutions/"
+            class="linkedin social-icon"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://x.com/safehomes2017"
+            class="twitter social-icon"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/safehomes2017/"
+            class="instagram social-icon"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://in.pinterest.com/safehomes1976/_created/"
+            class="pinterest social-icon"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCDEWx_u6dRuE1QxbfZl3_ow"
+            class="Youtube social-icon"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Tob Bar End -->
+
+    <!-- Navigation Bar Start -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../../assets/img/logo.png" alt="Logo" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#service_items"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./propertyManagement.html"
+                    >Property Management</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./inspectionsMaintenance.html"
+                    >Periodic Inspections & Maintenance</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./rentalAssistance.html"
+                    >Rental Assistance</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./statutoryPayments.html"
+                    >Statutory Payments</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./tenantScreening.html"
+                    >Tenant Screening & Onboarding</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./legalDocumentation.html"
+                    >Legal Documentation & Mutations</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./tenantMove.html"
+                    >Tenant Move-in & Move-Out</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./advertisements.html"
+                    >Advertisements</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./assistanceBuyingSelling.html"
+                    >Assistance in Buying / Selling</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../whysafehomes.html"
+                >Why Safe Homes?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../faqs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#contact"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar End -->
+
+    <!-- Heading Title Start -->
+    <div class="container-fluid main-content">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6">
+            <h1>Services</h1>
+          </div>
+          <div class="col-md-6">
+            <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item">
+                  <a href="../index.html" class="home-icon"
+                    ><i class="fa-solid fa-house-chimney"></i
+                  ></a>
+                </li>
+                <li
+                  class="breadcrumb-item active"
+                  aria-current="page"
+                  style="color: white"
+                >
+                  <span style="margin: 0 10px; color: white">&#62;</span>
+                  Services
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Heading Title End -->
+
+    <!-- Main Content Start -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Our Services</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item services-item">
+              <a
+                class="nav-link active services-link"
+                href="./propertyManagement.html"
+                >Property Management</a
+              >
+            </li>
+            <li class="nav-item services-item">
+              <a
+                class="nav-link services-link"
+                href="./inspectionsMaintenance.html"
+                >Periodic Inspections & Maintenance</a
+              >
+            </li>
+            <li class="nav-item services-item">
+              <a class="nav-link services-link" href="./rentalAssistance.html"
+                >Rental Assistance</a
+              >
+            </li>
+            <li class="nav-item services-item">
+              <a class="nav-link services-link" href="./statutoryPayments.html"
+                >Statutory Payments</a
+              >
+            </li>
+            <li class="nav-item services-item">
+              <a class="nav-link services-link" href="./tenantScreening.html"
+                >Tenant Screening & Onboarding</a
+              >
+            </li>
+            <li class="nav-item services-item">
+              <a class="nav-link services-link" href="./legalDocumentation.html"
+                >Legal Documentation & Mutations</a
+              >
+            </li>
+            <li class="nav-item services-item">
+              <a class="nav-link services-link" href="./tenantMove.html"
+                >Tenant Move-in & Move-Out</a
+              >
+            </li>
+            <li class="nav-item services-item">
+              <a class="nav-link services-link" href="./advertisements.html"
+                >Advertisements</a
+              >
+            </li>
+            <li class="nav-item services-item">
+              <a
+                class="nav-link services-link"
+                href="./assistanceBuyingSelling.html"
+                >Assistance in Buying / Selling</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9 tab-content" id="serviceContent">
+          <h3>
+            <img
+              src="../../assets/img/services/property Management.png"
+              alt="Assistance in Buying / Selling icon"
+              style="max-width: 5%"
+            />
+            Assistance in Buying / Selling: Expert Guidance to Optimize
+            Investment
+          </h3>
+          <p>
+            We specialize in providing comprehensive assistance for buying and
+            selling various types of properties such as Flats, Open Plots,
+            Villas and many more.
+          </p>
+
+          <h4>● Expert Services</h4>
+          <p>
+            Our expert team is dedicated to guiding you through every step of
+            the transaction process, ensuring a smooth and successful property
+            exchange. Whether you are looking to invest in a luxurious villa, a
+            high-rise flat, or a sprawling open plot, our extensive network and
+            deep market knowledge enable us to present you with the best options
+            that meet your investment goals.
+          </p>
+
+          <h4>● Property Negotiations</h4>
+          <p>
+            We handle all aspects of the negotiation to secure the most
+            favorable terms and ensure that every transaction aligns with your
+            financial and lifestyle objectives.
+          </p>
+
+          <h4>● Property Documentation</h4>
+          <p>
+            Moreover, our services extend beyond just buying and selling
+            properties; we provide meticulous support in drafting, notarizing,
+            and signing both rent and sale agreements. Understanding the
+            importance of legal formalities, we ensure that all documents are
+            carefully drafted to protect your interests and meet all regulatory
+            requirements.
+          </p>
+
+          <h4>● Property Registrations</h4>
+          <p>
+            Our team assists in the notarization and registration of rental
+            agreements as well as the registration of sales deeds, thereby
+            providing a comprehensive legal framework that secures your
+            transaction. With Safe Home, you can trust that every detail is
+            handled with professionalism and precision, making property buying
+            or selling a hassle-free experience.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content End -->
+
+    <!-- ======= Footer  ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <img
+                src="../../assets/img/logo.png"
+                alt="logo"
+                class="footer-logo"
+              />
+              <h3>Safe Homes</h3>
+              <p>
+                Kondapur,Hyderabad, Telangana, India <br />
+                <br />
+                <strong>Phone:</strong> +91-9948144467<br />
+                <strong>Email:</strong
+                ><a href="mailto:info@safehomes.biz" class="mail-to"
+                  >info@safehomes.biz</a
+                ><br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="../../index.html" style="margin-left: 5px">Home</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="../about.html" style="margin-left: 5px">About us</a>
+                </li>
+                <!-- <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a
+                    href="./services.html?service=propertyManagement"
+                    style="margin-left: 5px"
+                    >Services</a
+                  >
+                </li> -->
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="../whysafehomes.html" style="margin-left: 5px"
+                    >Why Safe Homes?</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="../faqs.html" style="margin-left: 5px">FAQs</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="../../index.html#contact" style="margin-left: 5px"
+                    >Testimonials</a
+                  >
+                </li>
+
+                <!-- <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Privacy Policy</a>
+                    </li> -->
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="./propertyManagement.html" style="margin-left: 5px">
+                    Property Management</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a
+                    href="./inspectionsMaintenance.html"
+                    style="margin-left: 5px"
+                    >Periodic inspections & maintainance</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="./rentalAssistance.html" style="margin-left: 5px"
+                    >Rental Assistance</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="./statutoryPayments.html" style="margin-left: 5px"
+                    >Statutory Payments</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="./tenantScreening.html" style="margin-left: 5px"
+                    >Tenant Screening and Onboarding</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="./legalDocumentation.html" style="margin-left: 5px"
+                    >Legal Documentation & Mutations</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="./tenantMove.html" style="margin-left: 5px"
+                    >Tenant Move-in & Move-out</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a href="./advertisements.html" style="margin-left: 5px"
+                    >Advertisements</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <a
+                    href="./assistanceBuyingSelling.html"
+                    style="margin-left: 5px"
+                    >Assistance in Buying / Selling</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+
+              <div class="social-links mt-2">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/people/Safe-Homes/61559884437235/"
+                  class="facebook"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/safehomes-propertysolutions/"
+                  class="linkedin"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://x.com/safehomes2017"
+                  class="twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/safehomes2017/"
+                  class="instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://in.pinterest.com/safehomes1976/_created/"
+                  class="pinterest"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCDEWx_u6dRuE1QxbfZl3_ow"
+                  class="Youtube"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Safe Homes</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by
+          <a target="_blank" href="http://smweblinx.in/">SM Weblinx</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- BootStrap Script Start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BootStrap Script End -->
+  </body>
+</html>
