@@ -44,13 +44,6 @@
       .services-link {
         color: white;
       }
-
-      .tab-content {
-        padding: 50px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-top: none;
-      }
     </style>
   </head>
   <body>
@@ -111,8 +104,12 @@
     <!-- Navigation Bar Start -->
     <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../../assets/img/logo.png" alt="Logo" height="40" />
+        <a class="navbar-brand" href="/">
+          <img
+            src="../../assets/img/logo/logo-medium.jpg"
+            alt="Logo"
+            height="40"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -131,10 +128,12 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html">Home</a>
+              <a class="nav-link js-scroll-trigger" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../about.html">About Us</a>
+              <a class="nav-link js-scroll-trigger" href="../about.html"
+                >About Us</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -203,20 +202,20 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../whysafehomes.html"
+              <a class="nav-link js-scroll-trigger" href="../whysafehomes.html"
                 >Why Safe Homes?</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../faqs.html">FAQs</a>
+              <a class="nav-link js-scroll-trigger" href="../faqs.html">FAQs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html#contact"
+              <a class="nav-link js-scroll-trigger" href="../../#testimonials"
                 >Testimonials</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -235,7 +234,7 @@
             <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
               <ol class="breadcrumb justify-content-end mb-0">
                 <li class="breadcrumb-item">
-                  <a href="../index.html" class="home-icon"
+                  <a href="/" class="home-icon"
                     ><i class="fa-solid fa-house-chimney"></i
                   ></a>
                 </li>
@@ -384,9 +383,9 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6 footer-contact">
+            <div class="col-lg-3 col-md-6 footer-contact" id="contact">
               <img
-                src="../../assets/img/logo.png"
+                src="../../assets/img/logo/logo.png"
                 alt="logo"
                 class="footer-logo"
               />
@@ -407,7 +406,7 @@
               <ul>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="../../index.html" style="margin-left: 5px">Home</a>
+                  <a href="/" style="margin-left: 5px">Home</a>
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
@@ -433,7 +432,7 @@
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="../../index.html#contact" style="margin-left: 5px"
+                  <a href="../../#testimonials" style="margin-left: 5px"
                     >Testimonials</a
                   >
                 </li>
@@ -567,17 +566,22 @@
     </footer>
     <!-- End Footer  -->
 
-    <!-- BootStrap Script Start -->
+    <!-- boot strap js CDN  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <!-- BootStrap Script End -->
+
+    <script>
+      $(document).ready(function () {
+        $(".js-scroll-trigger").click(function () {
+          $(".navbar-collapse").collapse("hide");
+        });
+      });
+    </script>
   </body>
 </html>

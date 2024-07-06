@@ -26,6 +26,15 @@ body {
   background-color: #f1f6fe;
 }
 
+html {
+  scroll-padding-top: 240px; /* Adjust according to the height of your navbar */
+}
+@media (max-width: 991.98px) {
+  html {
+    scroll-padding-top: 150px; /* Adjust according to the height of your navbar */
+  }
+}
+
 /*--------------------------------------------------------------
     # Navigation Bar
     --------------------------------------------------------------*/
@@ -83,6 +92,12 @@ body {
 .contact-info {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* Navbar dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 
 @media (max-width: 991.98px) {
@@ -277,6 +292,21 @@ body {
     text-align: left;
   }
 }
+
+/* inside pages  */
+.tab-content {
+  padding: 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  text-align: justify;
+}
+@media (max-width: 991.98px) {
+  .tab-content {
+    text-align: left;
+  }
+}
+
 /*--------------------------------------------------------------
     # Our Services
     --------------------------------------------------------------*/
