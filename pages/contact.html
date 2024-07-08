@@ -3,13 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assistance in Buying and Selling</title>
+    <title>Contact Us</title>
     <!-- Favicon -->
-    <link
-      rel="icon"
-      href="../../assets/img/logo/logo.png"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="../assets/img/logo/logo.png" type="image/x-icon" />
     <!-- BootStrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -23,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <!-- CSS Styling -->
-    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
     <style>
       /* main content  */
       .main-content {
@@ -33,22 +29,23 @@
         margin-bottom: 20px;
         color: white;
       }
-      .serviceContent {
-        background-color: white;
+      .contact-icon {
+        font-size: 30px;
       }
-      .services-item {
-        background-color: #3990df;
-        margin-bottom: 5px;
-        border-radius: 5px;
-        color: white;
+      iframe {
+        width: 98%;
+        height: 50vh;
       }
 
-      .services-item > a:hover {
-        color: white;
-        font-weight: bold;
+      .left-container {
+        margin: auto;
       }
-      .services-link {
-        color: white;
+
+      @media (max-width: 991.98px) {
+        iframe {
+          width: 100%;
+          padding: 0px;
+        }
       }
     </style>
   </head>
@@ -112,8 +109,8 @@
       <div class="container">
         <a class="navbar-brand" href="/">
           <img
-            src="../../assets/img/logo/logo-medium.jpg"
-            alt="Logo"
+            src="../assets/img/logo/logo-medium.jpg"
+            alt="Navigation Logo"
             height="40"
           />
         </a>
@@ -137,7 +134,7 @@
               <a class="nav-link js-scroll-trigger" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../about.html"
+              <a class="nav-link js-scroll-trigger" href="./about.html"
                 >About Us</a
               >
             </li>
@@ -153,75 +150,89 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./propertyManagement.html"
+                  <a
+                    class="dropdown-item"
+                    href="./services/propertyManagement.html"
                     >Property Management</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./inspectionsMaintenance.html"
+                  <a
+                    class="dropdown-item"
+                    href="./services/inspectionsMaintenance.html"
                     >Periodic Inspections & Maintenance</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./rentalAssistance.html"
+                  <a
+                    class="dropdown-item"
+                    href="./services/rentalAssistance.html"
                     >Rental Assistance</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./statutoryPayments.html"
+                  <a
+                    class="dropdown-item"
+                    href="./services/statutoryPayments.html"
                     >Statutory Payments</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./tenantScreening.html"
+                  <a
+                    class="dropdown-item"
+                    href="./services/tenantScreening.html"
                     >Tenant Screening & Onboarding</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./legalDocumentation.html"
+                  <a
+                    class="dropdown-item"
+                    href="./services/legalDocumentation.html"
                     >Legal Documentation & Mutations</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./tenantMove.html"
+                  <a class="dropdown-item" href="./services/tenantMove.html"
                     >Tenant Move-in & Move-Out</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./advertisements.html"
+                  <a class="dropdown-item" href="./services/advertisements.html"
                     >Advertisements</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./assistanceBuyingSelling.html"
+                  <a
+                    class="dropdown-item"
+                    href="./services/assistanceBuyingSelling.html"
                     >Assistance in Buying / Selling</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../whysafehomes.html"
+              <a class="nav-link js-scroll-trigger" href="./whysafehomes.html"
                 >Why Safe Homes?</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../faqs.html">FAQs</a>
+              <a class="nav-link js-scroll-trigger" href="./faqs.html">FAQs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../../#testimonials"
+              <a class="nav-link js-scroll-trigger" href="../#testimonials"
                 >Testimonials</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../contact.html"
+              <a class="nav-link js-scroll-trigger" href="./contact.html"
                 >Contact</a
               >
             </li>
@@ -236,7 +247,7 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6">
-            <h1>Services</h1>
+            <h1>Contact Us</h1>
           </div>
           <div class="col-md-6">
             <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
@@ -252,7 +263,7 @@
                   style="color: white"
                 >
                   <span style="margin: 0 10px; color: white">&#62;</span>
-                  Services
+                  Contact Us
                 </li>
               </ol>
             </nav>
@@ -265,114 +276,129 @@
     <!-- Main Content Start -->
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-3">
-          <h2>Our Services</h2>
-          <ul class="nav flex-column">
-            <li class="nav-item services-item">
-              <a
-                class="nav-link active services-link"
-                href="./propertyManagement.html"
-                >Property Management</a
-              >
-            </li>
-            <li class="nav-item services-item">
-              <a
-                class="nav-link services-link"
-                href="./inspectionsMaintenance.html"
-                >Periodic Inspections & Maintenance</a
-              >
-            </li>
-            <li class="nav-item services-item">
-              <a class="nav-link services-link" href="./rentalAssistance.html"
-                >Rental Assistance</a
-              >
-            </li>
-            <li class="nav-item services-item">
-              <a class="nav-link services-link" href="./statutoryPayments.html"
-                >Statutory Payments</a
-              >
-            </li>
-            <li class="nav-item services-item">
-              <a class="nav-link services-link" href="./tenantScreening.html"
-                >Tenant Screening & Onboarding</a
-              >
-            </li>
-            <li class="nav-item services-item">
-              <a class="nav-link services-link" href="./legalDocumentation.html"
-                >Legal Documentation & Mutations</a
-              >
-            </li>
-            <li class="nav-item services-item">
-              <a class="nav-link services-link" href="./tenantMove.html"
-                >Tenant Move-in & Move-Out</a
-              >
-            </li>
-            <li class="nav-item services-item">
-              <a class="nav-link services-link" href="./advertisements.html"
-                >Advertisements</a
-              >
-            </li>
-            <li class="nav-item services-item">
-              <a
-                class="nav-link services-link"
-                href="./assistanceBuyingSelling.html"
-                >Assistance in Buying / Selling</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-9 tab-content" id="serviceContent">
-          <h3>
-            <img
-              src="../../assets/img/services/property Management.png"
-              alt="Assistance in Buying / Selling icon"
-              style="max-width: 5%"
-            />
-            Assistance in Buying / Selling: Expert Guidance to Optimize
-            Investment
-          </h3>
-          <p>
-            We specialize in providing comprehensive assistance for buying and
-            selling various types of properties such as Flats, Open Plots,
-            Villas and many more.
-          </p>
+        <div class="col-md-12">
+          <div class="tab-content" id="myTabContent">
+            <div class="get-in-touch">
+              <h2>Get in Touch</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis accusamus, id rem explicabo tempora provident sint
+                placeat illo laboriosam excepturi nam voluptatum nihil animi
+                impedit modi. Quae nam ipsam id.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-6 left-container">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                    <p>Kondapur, Hyderabad, Telangana</p>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <p>+91-9948144467</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <p>
+                      <a
+                        href="mailto:info@safehomes.biz"
+                        class="mail-to"
+                        style="color: black"
+                        >info@safehomes.biz</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15223.701253547779!2d78.34618196240514!3d17.463288453773462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c92849a36b%3A0xde0dc034905512fa!2sKondapur%2C%20Telangana!5e0!3m2!1sen!2sin!4v1720431266948!5m2!1sen!2sin"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="contact-container"
+                  style="margin-top: 45px; box-shadow: none; padding: 10px"
+                >
+                  <h3 class="client-heading">Let us know your requirements</h3>
+                  <form style="text-align: left">
+                    <label for="inputName" class="form-label">
+                      Full Name<span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      aria-describedby="basic-addon1"
+                      placeholder="Full Name"
+                      required
+                    />
+                    <label for="inputEmail" class="form-label">
+                      Email<span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail"
+                      aria-describedby="emailHelp"
+                      placeholder="Email"
+                      required
+                    />
+                    <label for="inputNumber" class="form-label">
+                      Phone Number<span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputNumber"
+                      aria-describedby="basic-addon1"
+                      placeholder="WhatsApp"
+                      required
+                    />
+                    <label for="inputNumber" class="form-label">
+                      Location of Property<span style="color: red">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputNumber"
+                      aria-describedby="basic-addon1"
+                      placeholder="Locality, City"
+                      required
+                    />
 
-          <h4>● Expert Services</h4>
-          <p>
-            Our expert team is dedicated to guiding you through every step of
-            the transaction process, ensuring a smooth and successful property
-            exchange. Whether you are looking to invest in a luxurious villa, a
-            high-rise flat, or a sprawling open plot, our extensive network and
-            deep market knowledge enable us to present you with the best options
-            that meet your investment goals.
-          </p>
+                    <label for="inputComments" class="form-label">
+                      Other Comments
+                    </label>
+                    <textarea
+                      id="inputComments"
+                      class="form-control"
+                      aria-label="With textarea"
+                      placeholder="Any Other Instructions"
+                      rows="5"
+                    ></textarea>
 
-          <h4>● Property Negotiations</h4>
-          <p>
-            We handle all aspects of the negotiation to secure the most
-            favorable terms and ensure that every transaction aligns with your
-            financial and lifestyle objectives.
-          </p>
-
-          <h4>● Property Documentation</h4>
-          <p>
-            Moreover, our services extend beyond just buying and selling
-            properties; we provide meticulous support in drafting, notarizing,
-            and signing both rent and sale agreements. Understanding the
-            importance of legal formalities, we ensure that all documents are
-            carefully drafted to protect your interests and meet all regulatory
-            requirements.
-          </p>
-
-          <h4>● Property Registrations</h4>
-          <p>
-            Our team assists in the notarization and registration of rental
-            agreements as well as the registration of sales deeds, thereby
-            providing a comprehensive legal framework that secures your
-            transaction. With Safe Home, you can trust that every detail is
-            handled with professionalism and precision, making property buying
-            or selling a hassle-free experience.
-          </p>
+                    <button type="submit" class="btn btn-light submit-btn">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -385,7 +411,7 @@
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact" id="contact">
               <img
-                src="../../assets/img/logo/logo.png"
+                src="../assets/img/logo/logo.png"
                 alt="logo"
                 class="footer-logo"
               />
@@ -410,7 +436,7 @@
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="../about.html" style="margin-left: 5px">About us</a>
+                  <a href="./about.html" style="margin-left: 5px">About us</a>
                 </li>
                 <!-- <li>
                   <i class="fa-solid fa-angles-right"></i>
@@ -422,26 +448,24 @@
                 </li> -->
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="../whysafehomes.html" style="margin-left: 5px"
+                  <a href="./whysafehomes.html" style="margin-left: 5px"
                     >Why Safe Homes?</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="../faqs.html" style="margin-left: 5px">FAQs</a>
+                  <a href="./faqs.html" style="margin-left: 5px">FAQs</a>
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="../../#testimonials" style="margin-left: 5px"
+                  <a href="../#testimonials" style="margin-left: 5px"
                     >Testimonials</a
                   >
                 </li>
 
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="../../pages/contact.html" style="margin-left: 5px"
-                    >Contact</a
-                  >
+                  <a href="./contact.html" style="margin-left: 5px">Contact</a>
                 </li>
               </ul>
             </div>
@@ -451,58 +475,71 @@
               <ul>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="./propertyManagement.html" style="margin-left: 5px">
+                  <a
+                    href="./services/propertyManagement.html"
+                    style="margin-left: 5px"
+                  >
                     Property Management</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
                   <a
-                    href="./inspectionsMaintenance.html"
+                    href="./services/inspectionsMaintenance.html"
                     style="margin-left: 5px"
                     >Periodic inspections & maintainance</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="./rentalAssistance.html" style="margin-left: 5px"
+                  <a
+                    href="./services/rentalAssistance.html"
+                    style="margin-left: 5px"
                     >Rental Assistance</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="./statutoryPayments.html" style="margin-left: 5px"
+                  <a
+                    href="./services/statutoryPayments.html"
+                    style="margin-left: 5px"
                     >Statutory Payments</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="./tenantScreening.html" style="margin-left: 5px"
+                  <a
+                    href="./services/tenantScreening.html"
+                    style="margin-left: 5px"
                     >Tenant Screening and Onboarding</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="./legalDocumentation.html" style="margin-left: 5px"
+                  <a
+                    href="./services/legalDocumentation.html"
+                    style="margin-left: 5px"
                     >Legal Documentation & Mutations</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="./tenantMove.html" style="margin-left: 5px"
+                  <a href="./services/tenantMove.html" style="margin-left: 5px"
                     >Tenant Move-in & Move-out</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
-                  <a href="./advertisements.html" style="margin-left: 5px"
+                  <a
+                    href="./services/advertisements.html"
+                    style="margin-left: 5px"
                     >Advertisements</a
                   >
                 </li>
                 <li>
                   <i class="fa-solid fa-angles-right"></i>
                   <a
-                    href="./assistanceBuyingSelling.html"
+                    href="./services/assistanceBuyingSelling.html"
                     style="margin-left: 5px"
                     >Assistance in Buying / Selling</a
                   >
